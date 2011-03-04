@@ -1,0 +1,17 @@
+.TH tgetsc 3
+.SH NAME
+tgetsc \- get a shadow character from the terminal
+.SH SYNOPSIS
+#include "libterm.h"
+.br
+int tgetsc();
+.SH DESCRIPTION
+Use tgetsc() to get a character from the terminal (not standard
+input) without the character being echoed to the screen.
+If you haven't called initterm(3) already, it will be called
+for you.
+.SH RETURNS
+The next character typed is returned.
+.SH BUGS
+.SH SEE ALSO
+libterm(3), initterm(3)

@@ -1,0 +1,2 @@
+extern	initterm(),
+	tgetsc();

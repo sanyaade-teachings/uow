@@ -1,0 +1,31 @@
+.TH PG 1
+.SH NAME
+pg \- display page\-by\-page
+.SH SYNOPSIS
+pg [name] ...
+.SH DESCRIPTION
+pg is a filter that displays one screen of text and waits for
+the user user to press a key to go to the next page.
+The following keys control movement:
+.P
+.TP 10
+J
+Advance one line
+.TP 10
+enter
+Advance one line
+.TP 10
+space
+Advance one screen
+.TP 10
+q
+Go to next file
+.TP 10
+Q
+Quit
+.SH FILES
+.SH BUGS
+Search and backwards movement have not been implemented.
+.br
+Cannot determine whether output is redirected.
+.SH SEE ALSO

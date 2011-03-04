@@ -1,0 +1,34 @@
+.TH man 1
+.SH NAME
+man \- view manual page
+.SH SYNOPSIS
+man [section] name ...
+.SH DESCRIPTION
+man displays the manual for the topics listed in name
+one\-by\-one.
+man searches for a file named
+.B
+sect/name.sect
+where sect is a number (1-9) in one of the paths in the
+.B
+$MANPATH
+environment variable.
+When it finds a file, it runs the command with
+.B
+nroff -man | $PAGER
+and filtered through the program indicated in
+.B
+$PAGER
+(or pg if it exists).
+.SH FILES
+.SH ENVIRONMENT VARIABLES
+.TP 10
+$PAGER
+The program to filter nroff's output (default pg)
+.TP 10
+$MANPATH
+The paths to the man directories (default ../usr/man)
+.SH BUGS
+\-k is not implemented.
+.SH SEE ALSO
+intro(1)

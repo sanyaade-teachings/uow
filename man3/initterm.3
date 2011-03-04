@@ -1,0 +1,16 @@
+.TH initterm 3
+.SH NAME
+initterm \- initialize the terminal for libterm
+.SH SYNOPSIS
+#include "libterm.h"
+.br
+int initterm();
+.SH DESCRIPTION
+Use initterm() to initialize the terminal for libterm.
+As a side-effect, the standard input handle (not C's stdin)
+will be set to a handle to the file CONIN$.
+.SH RETURNS
+Zero for failure.
+.SH BUGS
+.SH SEE ALSO
+libterm(3)
